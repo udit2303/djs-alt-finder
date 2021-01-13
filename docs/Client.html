@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class: Client</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="styles/skyceil.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="utilities">
+        <div id="search">
+            <input type="text" id="search-box" placeholder="Search for stuffs..."><br>
+            <div id="search-results" style="display: none;"></div>
+        </div>
+        <button class="theme" data-theme="light"><i class="fas fa-moon"></i></button>
+    </div>
+    <hr>
+    <h4><a href="index.html">Home</a></h4><h5 class="no-bottom must-underline">Classes</h5><ul><li><span class="small-icon C">C</span><b><a href="Client.html">Client</a></b><ul class="has-class-methods"><li><span class="small-icon F">F</span><a href="Client.html#checkUser">checkUser</a></li></ul></li></ul><h5 class="no-bottom must-underline">Events</h5><ul><li><span class="small-icon E">E</span><a href="global.html#event:altFound">altFound</a></li></ul>
+</nav>
+
+<div id="main">
+    <div class="burger">
+        <div class="burger-line-1"></div>
+        <div class="burger-line-2"></div>
+        <div class="burger-line-3"></div>
+    </div>
+
+    <h1 class="page-title">Class: Client</h1>
+
+    
+
+
+
+
+<section>
+<header>
+    <hr>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>Client<span class="signature">(client, options)</span><span class="type-signature"></span></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    
+    <h4 class="name" id="Client"><span class="type-signature"></span>new Client<span class="signature">(client, options)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<div class="table-box">
+    <table class="params">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            <tr>
+                
+                    <td class="name"><code>client</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">instance</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Discord.js Client Instance</td>
+            </tr>
+
+        
+
+            <tr>
+                
+                    <td class="name"><code>options</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">object</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Options for Checking
+                    <h6>Properties</h6>
+                    
+
+<div class="table-box">
+    <table class="params">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            <tr>
+                
+                    <td class="name"><code>days</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">number</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Number of Minimum days the account must be old</td>
+            </tr>
+
+        
+
+            <tr>
+                
+                    <td class="name"><code>autocheck</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">boolean</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Wheter to auto check if the account is an alt on guildMemberAdd event</td>
+            </tr>
+
+        
+
+            <tr>
+                
+                    <td class="name"><code>guildOnly</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">boolean</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Wheter to auto check for a specific guild</td>
+            </tr>
+
+        
+
+            <tr>
+                
+                    <td class="name"><code>GuildId</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">string</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">The Guild ID if options.guildOnly is true</td>
+            </tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+                </td>
+            </tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="source.js.html">source.js</a>, <a href="source.js.html#line14">line 14</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="checkUser"><span class="type-signature"></span>checkUser<span class="signature">(user)</span><span class="type-signature"> &rarr; {Array|Array.user|Array.time}</span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<div class="table-box">
+    <table class="params">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            <tr>
+                
+                    <td class="name"><code>user</code></td>
+                
+
+                <td class="type">
+                
+                    
+<span class="param-type">object</span>
+
+
+                
+                </td>
+
+                
+
+                
+
+                <td class="description last">Discord.js User Object</td>
+            </tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="source.js.html">source.js</a>, <a href="source.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+<ul>
+        <li>
+<div class="param-desc">
+    List Of found accounts
+</div>
+
+
+
+<ul>
+    <li>
+        Type: <span class="simple-code">
+<span class="param-type">Array</span>
+
+</span>
+    </li>
+</ul>
+</li>
+    
+        <li>
+<div class="param-desc">
+    The user found
+</div>
+
+
+
+<ul>
+    <li>
+        Type: <span class="simple-code">
+<span class="param-type">Array.user</span>
+
+</span>
+    </li>
+</ul>
+</li>
+    
+        <li>
+<div class="param-desc">
+    Time the account has been registered on discord for
+</div>
+
+
+
+<ul>
+    <li>
+        Type: <span class="simple-code">
+<span class="param-type">Array.time</span>
+
+</span>
+    </li>
+</ul>
+</li>
+    </ul>
+
+
+
+
+
+<hr>
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed Jan 13 2021 17:46:45 GMT+0530 (India Standard Time) using <a href="https://github.com/devsnowflake/jsdoc-skyceil">Skyceil Theme</a>
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+</body>
+</html>

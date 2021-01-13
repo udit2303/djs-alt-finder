@@ -1,0 +1,37 @@
+{
+  "name": "djs-alt-finder",
+  "version": "1.0.0",
+  "description": "A simple package to find Alternate accounts using discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udit2303/djs-alt-finder.git"
+  },
+  "keywords": [
+    "alt",
+    "Alternate",
+    "discord.js",
+    "alt",
+    "account",
+    "alt",
+    "finder",
+    "discord.js",
+    "alt",
+    "finder"
+  ],
+  "author": "Udit Shrivastava <udit@udit.gq>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udit2303/djs-alt-finder/issues"
+  },
+  "homepage": "https://github.com/udit2303/djs-alt-finder#readme",
+  "dependencies": {
+    "parse-ms": "^2.1.0"
+  },
+  "devDependencies": {
+    "jsdoc-skyceil": "^1.0.6"
+  }
+}
