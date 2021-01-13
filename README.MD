@@ -64,8 +64,9 @@ client.on("ready", () => {
 
 
 # Links
+- **[Documentation](https://dev.udit.gq/djs-alt-finder)**
 - **[Discord Support Server](https://discord.gg/2SUybzb)**
-- **[GitHub](https://github.com/udit2303/discord-chatbot)**
+- **[GitHub](https://github.com/udit2303/djs-alt-finder)**
 
 
 
